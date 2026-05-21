@@ -1235,6 +1235,12 @@ function go(id) {
 
 // ─ Splash — wordmark fades in, then P icon morphs to Pin via Flubber
 (function runSplash() {
+  // Fallback: if Flubber fails to load, skip straight to login after 1s
+  if (typeof flubber === 'undefined') {
+    setTimeout(() => go('screen-login'), 1000);
+    return;
+  }
+  try {
   const P_PATHS = {
     p1: "M33.2112 61.0897C34.7137 61.0897 35.9319 62.3078 35.9319 63.8103V109.378C35.9319 110.881 34.7137 112.099 33.2112 112.099H2.60578C1.10338 112.099 -0.114868 110.881 -0.114868 109.378V63.8103C-0.114868 62.3079 1.10338 61.0897 2.60578 61.0897H33.2112Z",
     p2: "M78.779 61.0897C80.2815 61.0897 81.4988 62.3078 81.4988 63.8103V66.2196C81.4988 67.0968 81.0769 67.9204 80.3639 68.4313L48.3977 91.3315C46.5975 92.6211 44.093 91.3343 44.093 89.1198V63.8103C44.093 62.3078 45.3112 61.0897 46.8137 61.0897H78.779Z",
@@ -1288,6 +1294,7 @@ function go(id) {
   let t0=null;
   function tick(ts){if(!t0)t0=ts;const e=ts-t0;renderAt(e);if(e<T.DONE+400)requestAnimationFrame(tick);}
   requestAnimationFrame(tick);
+  } catch(e) { go('screen-login'); }
 })();
 
 // ─ PIN login (correct PIN: 1234)
