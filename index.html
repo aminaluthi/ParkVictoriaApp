@@ -487,7 +487,7 @@ body {
     </div>
     <div style="padding:10px 22px">
       <button onclick="go('screen-login')" style="background:none;border:none;color:#f0f6ff;cursor:pointer;padding:6px;display:flex;align-items:center">
-        <svg width="10" height="18" viewBox="0 0 10 18" fill="none"><path d="M9 1L1 9L9 17" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="10" height="18" viewBox="0 0 10 18" fill="none"><path d="M9 1L1 9L9 17" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/></svg>
       </button>
     </div>
 
@@ -527,7 +527,7 @@ body {
         <div></div>
         <button class="num-btn" onclick="pinKey('0')">0</button>
         <button class="num-btn" onclick="pinDel()">
-          <svg width="22" height="16" viewBox="0 0 22 16" fill="none"><path d="M8 1H21V15H8L1 8Z" stroke="#f0f6ff" stroke-width="1.5" stroke-linejoin="round"/><path d="M13 5L17.5 11M17.5 5L13 11" stroke="#f0f6ff" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <svg width="22" height="16" viewBox="0 0 22 16" fill="none"><path d="M8 1H21V15H8L1 8Z" stroke="#f0f6ff" stroke-width="1.5" stroke-linejoin="round"/><path d="M13 5L17.5 11M17.5 5L13 11" stroke="#f0f6ff" stroke-width="1.5" stroke-linecap="square"/></svg>
         </button>
       </div>
     </div>
@@ -546,7 +546,7 @@ body {
     </div>
     <div style="padding:10px 22px">
       <button onclick="go('screen-login')" style="background:none;border:none;color:#f0f6ff;cursor:pointer;padding:6px;display:flex;align-items:center">
-        <svg width="10" height="18" viewBox="0 0 10 18" fill="none"><path d="M9 1L1 9L9 17" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="10" height="18" viewBox="0 0 10 18" fill="none"><path d="M9 1L1 9L9 17" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/></svg>
       </button>
     </div>
 
@@ -643,20 +643,29 @@ body {
       </div><!-- /map-inner -->
 
       <button class="locate-btn">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="3.5" stroke="#03244f" stroke-width="1.5"/><line x1="9" y1="1" x2="9" y2="4" stroke="#03244f" stroke-width="1.5" stroke-linecap="round"/><line x1="9" y1="14" x2="9" y2="17" stroke="#03244f" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="9" x2="4" y2="9" stroke="#03244f" stroke-width="1.5" stroke-linecap="round"/><line x1="14" y1="9" x2="17" y2="9" stroke="#03244f" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="3.5" stroke="#03244f" stroke-width="1.5"/><line x1="9" y1="1" x2="9" y2="4" stroke="#03244f" stroke-width="1.5" stroke-linecap="square"/><line x1="9" y1="14" x2="9" y2="17" stroke="#03244f" stroke-width="1.5" stroke-linecap="square"/><line x1="1" y1="9" x2="4" y2="9" stroke="#03244f" stroke-width="1.5" stroke-linecap="square"/><line x1="14" y1="9" x2="17" y2="9" stroke="#03244f" stroke-width="1.5" stroke-linecap="square"/></svg>
       </button>
     </div>
 
     <!-- Floating pill tab bar — 3 tabs -->
     <div class="tab-bar">
       <div class="tab-btn active" id="htab0" onclick="go('screen-home')">
-        <svg width="24" height="24" viewBox="0 0 22 22" fill="none" stroke="#86bbff" stroke-width="1.8" stroke-linecap="round"><path d="M11 2C7.96 2 5.5 4.6 5.5 7.8C5.5 12.2 11 20 11 20C11 20 16.5 12.2 16.5 7.8C16.5 4.6 14.04 2 11 2Z"/><circle cx="11" cy="7.8" r="2.2" fill="none"/></svg>
+        <!-- Location pin from icons.svg -->
+        <svg width="22" height="26" viewBox="73 68 44 52" fill="none">
+          <path d="M81.1453 98.3027L79.484 109.01C79.4286 109.368 79 111.932 79 111.932C79 111.932 81.2542 111.932 81.5638 111.932H107.147C107.457 111.932 109.699 111.932 109.699 111.932C109.699 111.932 109.283 109.368 109.227 109.01L107.566 98.3027M95.4118 86.5318C95.4118 86.8604 95.3004 87.1756 95.1022 87.408C94.904 87.6403 94.6352 87.7709 94.355 87.7709C94.0747 87.7709 93.8059 87.6403 93.6077 87.408C93.4095 87.1756 93.2981 86.8604 93.2981 86.5318C93.2981 86.2032 93.4095 85.8881 93.6077 85.6557C93.8059 85.4233 94.0747 85.2928 94.355 85.2928C94.6352 85.2928 94.904 85.4233 95.1022 85.6557C95.3004 85.8881 95.4118 86.2032 95.4118 86.5318ZM103.339 86.4079C103.339 93.966 94.3556 102.02 94.3556 102.02C94.3556 102.02 85.3726 93.966 85.3726 86.4079C85.3726 80.6588 89.3949 76 94.3556 76C99.3164 76 103.339 80.6588 103.339 86.4079Z" stroke="#86bbff" stroke-width="3.17" stroke-linecap="square"/>
+        </svg>
       </div>
       <div class="tab-btn" id="htab1" onclick="go('screen-enter-space')">
-        <svg width="24" height="24" viewBox="0 0 22 22" fill="none" stroke="#f0f6ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="8" width="20" height="9" rx="2.5"/><path d="M4 8V6.5C4 5.4 4.9 4.5 6 4.5H16C17.1 4.5 18 5.4 18 6.5V8"/><path d="M1 13h3.5M17.5 13H21"/><circle cx="5.5" cy="17" r="1.5" fill="#f0f6ff" stroke="none"/><circle cx="16.5" cy="17" r="1.5" fill="#f0f6ff" stroke="none"/><path d="M7 17h8"/></svg>
+        <!-- Car from icons.svg -->
+        <svg width="26" height="24" viewBox="191 72 44 44" fill="none">
+          <path d="M202.138 105.896V108.999M223.862 105.896V108.999M228 104.861H198.001C198.001 104.861 198 103.935 198 102.792V95.5509C198 93.2655 199.853 91.413 202.138 91.413H223.862C226.148 91.413 228 93.2655 228 95.5509V102.792C228 103.935 228 104.861 228 104.861ZM205.759 98.137C205.759 98.7082 205.296 99.1715 204.725 99.1715C204.153 99.1715 203.69 98.7082 203.69 98.137C203.69 97.5658 204.153 97.1025 204.725 97.1025C205.296 97.1025 205.759 97.5658 205.759 98.137ZM222.311 98.137C222.311 98.7082 221.847 99.1715 221.276 99.1715C220.705 99.1715 220.242 98.7082 220.242 98.137C220.242 97.5658 220.705 97.1025 221.276 97.1025C221.847 97.1025 222.311 97.5658 222.311 98.137ZM225.931 91.413H200.069L201.562 82.457C201.894 80.4618 202.2 78.9994 202.2 78.9994H223.856C223.856 78.9994 224.106 80.4618 224.438 82.457L225.931 91.413Z" stroke="rgba(240,246,255,0.55)" stroke-width="2.65" stroke-linecap="square"/>
+        </svg>
       </div>
       <div class="tab-btn" id="htab2" onclick="go('screen-settings')">
-        <svg width="24" height="24" viewBox="0 0 22 22" fill="none" stroke="#f0f6ff" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="7" r="3.5"/><path d="M4 19C4 15.7 7.1 13 11 13C14.9 13 18 15.7 18 19"/></svg>
+        <!-- Person from icons.svg -->
+        <svg width="24" height="24" viewBox="188 186 50 50" fill="none">
+          <path d="M219.666 202.728H218.341C218.341 205.713 215.922 208.132 212.937 208.132V209.456V210.781C217.385 210.781 220.99 207.175 220.99 202.728H219.666ZM212.937 209.456V208.132C209.953 208.132 207.534 205.713 207.534 202.728H206.209H204.885C204.885 207.175 208.49 210.781 212.937 210.781V209.456ZM206.209 202.728H207.534C207.534 199.744 209.953 197.324 212.937 197.324V196V194.676C208.49 194.676 204.885 198.281 204.885 202.728H206.209ZM212.937 196V197.324C215.922 197.324 218.341 199.744 218.341 202.728H219.666H220.99C220.99 198.281 217.385 194.676 212.937 194.676V196ZM198 226.018V227.342H228V226.018V224.693H198V226.018ZM228 226.018C229.317 225.881 229.317 225.881 229.317 225.881L229.317 225.88L229.317 225.879L229.316 225.875L229.316 225.866C229.315 225.859 229.314 225.85 229.312 225.84C229.31 225.818 229.306 225.789 229.301 225.752C229.292 225.679 229.277 225.577 229.256 225.451C229.214 225.198 229.147 224.844 229.042 224.422C228.834 223.581 228.472 222.442 227.856 221.276L226.685 221.895L225.514 222.513C226.002 223.437 226.298 224.36 226.471 225.059C226.557 225.405 226.611 225.69 226.643 225.884C226.659 225.981 226.67 226.054 226.676 226.101C226.679 226.124 226.681 226.14 226.682 226.149C226.683 226.154 226.683 226.157 226.683 226.157V226.158V226.157V226.156V226.155V226.154L228 226.018ZM226.685 221.895L227.856 221.276C226.949 219.559 225.46 217.677 223.039 216.232C220.619 214.787 217.345 213.825 212.938 213.825V215.149V216.474C216.952 216.474 219.739 217.347 221.682 218.506C223.623 219.665 224.797 221.156 225.514 222.513L226.685 221.895ZM212.938 215.149V213.825C208.53 213.825 205.256 214.787 202.836 216.232C200.415 217.677 198.926 219.559 198.019 221.276L199.19 221.895L200.361 222.513C201.078 221.156 202.252 219.665 204.194 218.506C206.136 217.347 208.923 216.474 212.938 216.474V215.149ZM199.19 221.895L198.019 221.276C197.393 222.461 197.061 223.617 196.884 224.471C196.795 224.901 196.744 225.26 196.715 225.518C196.7 225.647 196.691 225.751 196.685 225.826C196.682 225.864 196.68 225.894 196.679 225.917C196.678 225.928 196.678 225.938 196.678 225.945L196.677 225.955L196.677 225.959L196.677 225.96L196.677 225.961C196.677 225.961 196.677 225.962 198 226.018C199.323 226.074 199.323 226.074 199.323 226.075V226.075V226.076V226.077V226.078V226.078V226.078V226.076V226.072C199.324 226.064 199.325 226.048 199.326 226.026C199.33 225.982 199.336 225.911 199.346 225.817C199.368 225.628 199.407 225.349 199.478 225.009C199.62 224.324 199.883 223.419 200.361 222.513L199.19 221.895Z" fill="rgba(240,246,255,0.55)"/>
+        </svg>
       </div>
     </div>
   </div>
@@ -674,7 +683,7 @@ body {
     </div>
     <div class="screen-header">
       <button class="back-btn" onclick="go('screen-home')">
-        <svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/></svg>
       </button>
       <h2>Enter Space</h2>
       <div class="hdr-right">
@@ -718,13 +727,13 @@ body {
         <div></div>
         <button class="num-btn" onclick="spaceKey('0')">0</button>
         <button class="num-btn" onclick="spaceDel()">
-          <svg width="22" height="16" viewBox="0 0 22 16" fill="none"><path d="M8 1H21V15H8L1 8Z" stroke="#f0f6ff" stroke-width="1.5" stroke-linejoin="round"/><path d="M13 5L17.5 11M17.5 5L13 11" stroke="#f0f6ff" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <svg width="22" height="16" viewBox="0 0 22 16" fill="none"><path d="M8 1H21V15H8L1 8Z" stroke="#f0f6ff" stroke-width="1.5" stroke-linejoin="round"/><path d="M13 5L17.5 11M17.5 5L13 11" stroke="#f0f6ff" stroke-width="1.5" stroke-linecap="square"/></svg>
         </button>
       </div>
 
       <button class="btn-ghost" onclick="go('screen-length-of-stay')" style="width:260px">
         Start session
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M5.5 3L10.5 8L5.5 13" stroke="#f0f6ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M5.5 3L10.5 8L5.5 13" stroke="#f0f6ff" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter"/></svg>
       </button>
 
       <p style="color:rgba(240,246,255,0.3);font-size:11px;text-align:center;max-width:270px;line-height:1.5">
@@ -746,7 +755,7 @@ body {
     </div>
     <div class="screen-header">
       <button class="back-btn" onclick="go('screen-home')">
-        <svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/></svg>
       </button>
       <h2>Current Session</h2>
       <div class="hdr-right">
@@ -823,7 +832,7 @@ body {
     </div>
     <div class="screen-header">
       <button class="back-btn" onclick="go('screen-home')">
-        <svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/></svg>
       </button>
       <h2>Settings</h2>
     </div>
@@ -842,25 +851,25 @@ body {
     <div style="flex:1;overflow-y:auto;padding:0 18px 24px">
       <p class="section-label">Account</p>
       <div style="background:rgba(243,243,243,0.07);border:1px solid rgba(240,246,255,0.1);border-radius:16px;margin-bottom:18px;overflow:hidden">
-        <div class="settings-row" onclick="go('screen-profile')"><span style="color:#f0f6ff;font-size:15px">Edit Profile</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-        <div class="settings-row"><span style="color:#f0f6ff;font-size:15px">Change PIN</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-        <div class="settings-row" onclick="go('screen-payment-methods')"><span style="color:#f0f6ff;font-size:15px">Payment Methods</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-        <div class="settings-row" onclick="go('screen-history')"><span style="color:#f0f6ff;font-size:15px">Parking History</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-        <div class="settings-row"><span style="color:#f0f6ff;font-size:15px">Vehicle Registration</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <div class="settings-row" onclick="go('screen-profile')"><span style="color:#f0f6ff;font-size:15px">Edit Profile</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="square"/></svg></div>
+        <div class="settings-row"><span style="color:#f0f6ff;font-size:15px">Change PIN</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="square"/></svg></div>
+        <div class="settings-row" onclick="go('screen-payment-methods')"><span style="color:#f0f6ff;font-size:15px">Payment Methods</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="square"/></svg></div>
+        <div class="settings-row" onclick="go('screen-history')"><span style="color:#f0f6ff;font-size:15px">Parking History</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="square"/></svg></div>
+        <div class="settings-row"><span style="color:#f0f6ff;font-size:15px">Vehicle Registration</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="square"/></svg></div>
       </div>
 
       <p class="section-label">Preferences</p>
       <div style="background:rgba(243,243,243,0.07);border:1px solid rgba(240,246,255,0.1);border-radius:16px;margin-bottom:18px;overflow:hidden">
-        <div class="settings-row" onclick="go('screen-notifications')"><span style="color:#f0f6ff;font-size:15px">Notifications</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <div class="settings-row" onclick="go('screen-notifications')"><span style="color:#f0f6ff;font-size:15px">Notifications</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="square"/></svg></div>
         <div class="settings-row"><span style="color:#f0f6ff;font-size:15px">Session Reminders</span><div class="toggle off" onclick="event.stopPropagation();this.classList.toggle('off')"></div></div>
         <div class="settings-row"><span style="color:#f0f6ff;font-size:15px">Location Services</span><div class="toggle" onclick="event.stopPropagation();this.classList.toggle('off')"></div></div>
       </div>
 
       <p class="section-label">Support</p>
       <div style="background:rgba(243,243,243,0.07);border:1px solid rgba(240,246,255,0.1);border-radius:16px;margin-bottom:20px;overflow:hidden">
-        <div class="settings-row" onclick="go('screen-help')"><span style="color:#f0f6ff;font-size:15px">Help &amp; FAQs</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-        <div class="settings-row" onclick="go('screen-privacy')"><span style="color:#f0f6ff;font-size:15px">Privacy Policy</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-        <div class="settings-row"><span style="color:#f0f6ff;font-size:15px">Contact Us</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <div class="settings-row" onclick="go('screen-help')"><span style="color:#f0f6ff;font-size:15px">Help &amp; FAQs</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="square"/></svg></div>
+        <div class="settings-row" onclick="go('screen-privacy')"><span style="color:#f0f6ff;font-size:15px">Privacy Policy</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="square"/></svg></div>
+        <div class="settings-row"><span style="color:#f0f6ff;font-size:15px">Contact Us</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="square"/></svg></div>
       </div>
 
       <button onclick="go('screen-login')" style="width:100%;height:50px;border-radius:16px;background:rgba(255,107,107,0.1);border:1px solid rgba(255,107,107,0.3);color:#ff6b6b;font-size:16px;font-weight:500;cursor:pointer">
@@ -923,7 +932,7 @@ body {
   <div class="screen" id="screen-length-of-stay">
     <div class="status-bar"><span>9:41</span><div class="status-icons"><svg width="17" height="12" viewBox="0 0 17 12" fill="#f0f6ff"><rect x="0" y="3" width="3" height="9" rx="1"/><rect x="4.5" y="2" width="3" height="10" rx="1"/><rect x="9" y="0.5" width="3" height="11.5" rx="1"/><rect x="13.5" y="0" width="3" height="12" rx="1"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3.5" stroke="#f0f6ff" stroke-opacity="0.4"/><rect x="2" y="2" width="17" height="8" rx="2" fill="#f0f6ff"/></svg></div></div>
     <div class="screen-header">
-      <button class="back-btn" onclick="go('screen-enter-space')"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="back-btn" onclick="go('screen-enter-space')"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/></svg></button>
       <h2>Length of Stay</h2>
     </div>
     <!-- mini map peek -->
@@ -951,7 +960,7 @@ body {
   <div class="screen" id="screen-length-custom">
     <div class="status-bar"><span>9:41</span><div class="status-icons"><svg width="17" height="12" viewBox="0 0 17 12" fill="#f0f6ff"><rect x="0" y="3" width="3" height="9" rx="1"/><rect x="4.5" y="2" width="3" height="10" rx="1"/><rect x="9" y="0.5" width="3" height="11.5" rx="1"/><rect x="13.5" y="0" width="3" height="12" rx="1"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3.5" stroke="#f0f6ff" stroke-opacity="0.4"/><rect x="2" y="2" width="17" height="8" rx="2" fill="#f0f6ff"/></svg></div></div>
     <div class="screen-header">
-      <button class="back-btn" onclick="go('screen-length-of-stay')"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="back-btn" onclick="go('screen-length-of-stay')"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/></svg></button>
       <h2>Custom Duration</h2>
     </div>
     <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px 18px 40px;gap:28px">
@@ -989,7 +998,7 @@ body {
   <div class="screen" id="screen-payment-method">
     <div class="status-bar"><span>9:41</span><div class="status-icons"><svg width="17" height="12" viewBox="0 0 17 12" fill="#f0f6ff"><rect x="0" y="3" width="3" height="9" rx="1"/><rect x="4.5" y="2" width="3" height="10" rx="1"/><rect x="9" y="0.5" width="3" height="11.5" rx="1"/><rect x="13.5" y="0" width="3" height="12" rx="1"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3.5" stroke="#f0f6ff" stroke-opacity="0.4"/><rect x="2" y="2" width="17" height="8" rx="2" fill="#f0f6ff"/></svg></div></div>
     <div class="screen-header">
-      <button class="back-btn" onclick="go('screen-length-of-stay')"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="back-btn" onclick="go('screen-length-of-stay')"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/></svg></button>
       <h2>Payment Method</h2>
     </div>
     <div style="flex:1;display:flex;flex-direction:column;padding:20px 18px 40px;gap:16px">
@@ -1005,7 +1014,7 @@ body {
           <p style="color:#f0f6ff;font-size:15px;font-weight:600">Credit cards</p>
           <p style="color:rgba(240,246,255,0.45);font-size:12px">2 cards saved</p>
         </div>
-        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" style="margin-left:auto"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" style="margin-left:auto"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="square"/></svg>
       </div>
       <div style="display:flex;align-items:center;gap:10px;padding:4px 0">
         <div style="flex:1;height:1px;background:rgba(240,246,255,0.1)"></div>
@@ -1030,19 +1039,19 @@ body {
   <div class="screen" id="screen-payment-methods">
     <div class="status-bar"><span>9:41</span><div class="status-icons"><svg width="17" height="12" viewBox="0 0 17 12" fill="#f0f6ff"><rect x="0" y="3" width="3" height="9" rx="1"/><rect x="4.5" y="2" width="3" height="10" rx="1"/><rect x="9" y="0.5" width="3" height="11.5" rx="1"/><rect x="13.5" y="0" width="3" height="12" rx="1"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3.5" stroke="#f0f6ff" stroke-opacity="0.4"/><rect x="2" y="2" width="17" height="8" rx="2" fill="#f0f6ff"/></svg></div></div>
     <div class="screen-header">
-      <button class="back-btn" onclick="go('screen-settings')"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="back-btn" onclick="go('screen-settings')"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/></svg></button>
       <h2>Payment Methods</h2>
     </div>
     <div style="flex:1;padding:16px 18px;display:flex;flex-direction:column;gap:12px">
       <div class="pay-card">
         <div class="visa-badge">VISA</div>
         <div><p style="color:#f0f6ff;font-size:15px;font-weight:600">Personal Visa</p><p style="color:rgba(240,246,255,0.45);font-size:12px">····4002</p></div>
-        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" style="margin-left:auto"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" style="margin-left:auto"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="square"/></svg>
       </div>
       <div class="pay-card">
         <div class="visa-badge">VISA</div>
         <div><p style="color:#f0f6ff;font-size:15px;font-weight:600">Business Visa</p><p style="color:rgba(240,246,255,0.45);font-size:12px">····1648</p></div>
-        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" style="margin-left:auto"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" style="margin-left:auto"><path d="M1 1L7 7L1 13" stroke="rgba(240,246,255,0.3)" stroke-width="1.5" stroke-linecap="square"/></svg>
       </div>
       <div class="option-card" style="text-align:center">
         <p style="color:#86bbff;font-size:15px;font-weight:600">+ Add Payment Method</p>
@@ -1056,7 +1065,7 @@ body {
   <div class="screen" id="screen-history">
     <div class="status-bar"><span>9:41</span><div class="status-icons"><svg width="17" height="12" viewBox="0 0 17 12" fill="#f0f6ff"><rect x="0" y="3" width="3" height="9" rx="1"/><rect x="4.5" y="2" width="3" height="10" rx="1"/><rect x="9" y="0.5" width="3" height="11.5" rx="1"/><rect x="13.5" y="0" width="3" height="12" rx="1"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3.5" stroke="#f0f6ff" stroke-opacity="0.4"/><rect x="2" y="2" width="17" height="8" rx="2" fill="#f0f6ff"/></svg></div></div>
     <div class="screen-header">
-      <button class="back-btn" onclick="go('screen-home')"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="back-btn" onclick="go('screen-home')"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/></svg></button>
       <h2>Parking History</h2>
     </div>
     <div style="flex:1;overflow-y:auto;padding:16px 18px;display:flex;flex-direction:column;gap:12px">
@@ -1099,7 +1108,7 @@ body {
   <div class="screen" id="screen-profile">
     <div class="status-bar"><span>9:41</span><div class="status-icons"><svg width="17" height="12" viewBox="0 0 17 12" fill="#f0f6ff"><rect x="0" y="3" width="3" height="9" rx="1"/><rect x="4.5" y="2" width="3" height="10" rx="1"/><rect x="9" y="0.5" width="3" height="11.5" rx="1"/><rect x="13.5" y="0" width="3" height="12" rx="1"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3.5" stroke="#f0f6ff" stroke-opacity="0.4"/><rect x="2" y="2" width="17" height="8" rx="2" fill="#f0f6ff"/></svg></div></div>
     <div class="screen-header">
-      <button class="back-btn" onclick="go('screen-settings')"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="back-btn" onclick="go('screen-settings')"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/></svg></button>
       <h2>Profile</h2>
     </div>
     <div style="flex:1;display:flex;flex-direction:column;padding:24px 18px 40px;gap:20px">
@@ -1121,7 +1130,7 @@ body {
   <div class="screen" id="screen-notifications">
     <div class="status-bar"><span>9:41</span><div class="status-icons"><svg width="17" height="12" viewBox="0 0 17 12" fill="#f0f6ff"><rect x="0" y="3" width="3" height="9" rx="1"/><rect x="4.5" y="2" width="3" height="10" rx="1"/><rect x="9" y="0.5" width="3" height="11.5" rx="1"/><rect x="13.5" y="0" width="3" height="12" rx="1"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3.5" stroke="#f0f6ff" stroke-opacity="0.4"/><rect x="2" y="2" width="17" height="8" rx="2" fill="#f0f6ff"/></svg></div></div>
     <div class="screen-header">
-      <button class="back-btn" onclick="go('screen-settings')"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="back-btn" onclick="go('screen-settings')"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/></svg></button>
       <h2>Notifications</h2>
     </div>
     <div style="flex:1;overflow-y:auto;padding:16px 18px;display:flex;flex-direction:column;gap:0">
@@ -1142,25 +1151,25 @@ body {
   <div class="screen" id="screen-help">
     <div class="status-bar"><span>9:41</span><div class="status-icons"><svg width="17" height="12" viewBox="0 0 17 12" fill="#f0f6ff"><rect x="0" y="3" width="3" height="9" rx="1"/><rect x="4.5" y="2" width="3" height="10" rx="1"/><rect x="9" y="0.5" width="3" height="11.5" rx="1"/><rect x="13.5" y="0" width="3" height="12" rx="1"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3.5" stroke="#f0f6ff" stroke-opacity="0.4"/><rect x="2" y="2" width="17" height="8" rx="2" fill="#f0f6ff"/></svg></div></div>
     <div class="screen-header">
-      <button class="back-btn" onclick="go('screen-settings')"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="back-btn" onclick="go('screen-settings')"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/></svg></button>
       <h2>Help &amp; Support</h2>
     </div>
     <div style="flex:1;overflow-y:auto;padding:16px 18px;display:flex;flex-direction:column;gap:10px">
       <p style="color:rgba(240,246,255,0.45);font-size:13px;margin-bottom:4px">Frequently asked questions</p>
       <div class="faq-item" onclick="this.classList.toggle('open')">
-        <div class="faq-q">How do I find my space number?<svg class="faq-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1L6 6L11 1" stroke="rgba(240,246,255,0.5)" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <div class="faq-q">How do I find my space number?<svg class="faq-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1L6 6L11 1" stroke="rgba(240,246,255,0.5)" stroke-width="1.5" stroke-linecap="square"/></svg></div>
         <div class="faq-a">Your space number is displayed on the sign next to or in front of your parking spot. It is usually a 4-digit number painted on the ground or on a nearby post.</div>
       </div>
       <div class="faq-item" onclick="this.classList.toggle('open')">
-        <div class="faq-q">What if I go overtime?<svg class="faq-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1L6 6L11 1" stroke="rgba(240,246,255,0.5)" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <div class="faq-q">What if I go overtime?<svg class="faq-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1L6 6L11 1" stroke="rgba(240,246,255,0.5)" stroke-width="1.5" stroke-linecap="square"/></svg></div>
         <div class="faq-a">If you exceed your session time, parking officers may issue a fine. You can extend your session from the Active Session screen before it expires.</div>
       </div>
       <div class="faq-item" onclick="this.classList.toggle('open')">
-        <div class="faq-q">Can I extend my session?<svg class="faq-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1L6 6L11 1" stroke="rgba(240,246,255,0.5)" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <div class="faq-q">Can I extend my session?<svg class="faq-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1L6 6L11 1" stroke="rgba(240,246,255,0.5)" stroke-width="1.5" stroke-linecap="square"/></svg></div>
         <div class="faq-a">Yes — tap "Extend Session" from the Active Session screen. Extensions are subject to the maximum stay limit for your zone.</div>
       </div>
       <div class="faq-item" onclick="this.classList.toggle('open')">
-        <div class="faq-q">How do refunds work?<svg class="faq-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1L6 6L11 1" stroke="rgba(240,246,255,0.5)" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <div class="faq-q">How do refunds work?<svg class="faq-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1L6 6L11 1" stroke="rgba(240,246,255,0.5)" stroke-width="1.5" stroke-linecap="square"/></svg></div>
         <div class="faq-a">If you end your session early, unused time is automatically refunded to your original payment method within 3–5 business days.</div>
       </div>
       <div style="background:rgba(243,243,243,0.07);border:1px solid rgba(240,246,255,0.1);border-radius:14px;padding:20px;text-align:center;margin-top:4px">
@@ -1176,7 +1185,7 @@ body {
   <div class="screen" id="screen-privacy">
     <div class="status-bar"><span>9:41</span><div class="status-icons"><svg width="17" height="12" viewBox="0 0 17 12" fill="#f0f6ff"><rect x="0" y="3" width="3" height="9" rx="1"/><rect x="4.5" y="2" width="3" height="10" rx="1"/><rect x="9" y="0.5" width="3" height="11.5" rx="1"/><rect x="13.5" y="0" width="3" height="12" rx="1"/></svg><svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3.5" stroke="#f0f6ff" stroke-opacity="0.4"/><rect x="2" y="2" width="17" height="8" rx="2" fill="#f0f6ff"/></svg></div></div>
     <div class="screen-header">
-      <button class="back-btn" onclick="go('screen-settings')"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="back-btn" onclick="go('screen-settings')"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M8 1L1 8L8 15" stroke="#f0f6ff" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/></svg></button>
       <h2>Privacy Policy</h2>
     </div>
     <div style="flex:1;overflow-y:auto;padding:20px 18px 40px">
